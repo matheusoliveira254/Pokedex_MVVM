@@ -13,6 +13,7 @@ enum NetworkError: Error, LocalizedError {
     case badURL
     case couldNotUnwrap
     case errorDecoding
+    case noData
     
     var localizedDescription: String {
         switch self {
@@ -26,6 +27,8 @@ enum NetworkError: Error, LocalizedError {
             return "Error ecountered when decoding the data"
         case .unexpectedError:
             return ""
+        case .noData:
+            return "No data fammm"
         }
     }
 }
