@@ -14,6 +14,7 @@ extension URL {
 enum PokemonEndPoint {
     case pokedex
     case pokemon(String)
+    case nextPage(URL)
     
     var url: URL? {
         guard var baseURL = URL.pokemonBaseURL else {return nil}
@@ -24,6 +25,8 @@ enum PokemonEndPoint {
         case .pokemon(let pokemon):
             baseURL.appendPathComponent(pokemon)
             return baseURL
+        case .nextPage(let nextURL):
+            return nextURL
         }
     }
 }
