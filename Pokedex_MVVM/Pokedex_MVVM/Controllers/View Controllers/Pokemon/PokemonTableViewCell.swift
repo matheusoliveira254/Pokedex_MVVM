@@ -18,8 +18,8 @@ class PokemonTableViewCell: UITableViewCell {
     override func prepareForReuse() {
         super.prepareForReuse()
         pokemonImageView.image = nil
-//        pokemonNameLabel.text = nil
-//        pokemonIDLabel.text = nil
+        pokemonNameLabel.text = nil
+        pokemonIDLabel.text = nil
     }
     
     

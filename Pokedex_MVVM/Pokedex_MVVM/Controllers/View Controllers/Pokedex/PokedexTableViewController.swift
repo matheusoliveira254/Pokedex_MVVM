@@ -57,12 +57,12 @@ class PokedexTableViewController: UITableViewController {
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard segue.identifier == "toPokemonDetails",
-           let destinationVC = segue.destination as? PokemonViewController,
-              let indexPath = tableView.indexPathForSelectedRow else {return}
+           let destinationVC = segue.destination as? PokemonDetailViewController,
+              let cell = sender as? PokemonTableViewCell,
+        let pokemon = cell.viewModel.pokemon else {return}
+        let pokemonSprite = cell.pokemonImageView.image
                
-            let pokemonToSend = viewModel.pokedexEntries[indexPath.row]
-        
-//            destinationVC.configure(with: pokemonToSend)
+        destinationVC.viewModel = PokemonDetailViewModel(pokemon: pokemon, image: pokemonSprite)
     }
 }
 

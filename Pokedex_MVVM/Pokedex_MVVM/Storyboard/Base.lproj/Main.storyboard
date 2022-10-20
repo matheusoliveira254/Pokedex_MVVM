@@ -78,10 +78,10 @@
             </objects>
             <point key="canvasLocation" x="862.31884057971024" y="83.705357142857139"/>
         </scene>
-        <!--Pokemon View Controller-->
+        <!--Pokemon Detail View Controller-->
         <scene sceneID="XYC-y3-VYh">
             <objects>
-                <viewController id="9rN-zo-OwA" customClass="PokemonViewController" customModule="Pokedex_MVVM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9rN-zo-OwA" customClass="PokemonDetailViewController" customModule="Pokedex_MVVM" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="A2b-Pw-TFX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,7 +91,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fdd-e4-OIN">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="6"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
