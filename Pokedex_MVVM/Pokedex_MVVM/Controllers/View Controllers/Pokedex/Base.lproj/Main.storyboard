@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gl3-d3-J55">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="mF6-lk-xpn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gl3-d3-J55" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4a9-G9-hpE">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="htR-09-PgQ" kind="relationship" relationship="rootViewController" id="KQr-c2-yKQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XFk-Cj-d2r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-47.826086956521742" y="83.705357142857139"/>
+        </scene>
+        <!--PokemonDetail-->
+        <scene sceneID="ahu-OT-yU6">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PokemonDetail" id="FEe-Ud-lFM" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="86S-X4-MHH"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qGK-pL-ZeB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1823" y="84"/>
+        </scene>
+        <!--Pokedex-->
+        <scene sceneID="J6Z-6K-ZNJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Pokedex" id="htR-09-PgQ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="eL9-pd-2Ju"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PPf-un-fPy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="862.31884057971024" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+</document>
